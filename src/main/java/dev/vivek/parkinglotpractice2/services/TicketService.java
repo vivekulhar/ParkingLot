@@ -45,6 +45,7 @@ public class TicketService {
         ticket.setVehicle(vehicle);
         ticket.setEntryTime(new Date());
 
+        ticketRepository.save(ticket);
         return ticket;
     }
 }

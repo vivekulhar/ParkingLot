@@ -23,10 +23,10 @@ public class Ticket extends BaseModel{
     private ParkingSpot parkingSpot;
     @ManyToOne
     private Operator generatedBy;
-    @OneToOne
+    /*@OneToOne
     private Invoice invoice;
     @OneToOne
-    private Payment payment;
+    private Payment payment;*/
 
     private String ownerName;
     @OneToOne

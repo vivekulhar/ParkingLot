@@ -25,6 +25,4 @@ public class ParkingSpot extends BaseModel{
     private ParkingSpotStatus parkingSpotStatus;
     @OneToMany(mappedBy = "parkingSpot")
     List<Ticket> tickets;
-
-    
 }

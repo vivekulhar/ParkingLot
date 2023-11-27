@@ -23,4 +23,6 @@ public class Invoice extends BaseModel{
     private Operator operator;
     @Enumerated(EnumType.ORDINAL)
     private InvoicePaidStatus invoicePaidStatus;
+    @OneToOne
+    private Payment payment;
 }
